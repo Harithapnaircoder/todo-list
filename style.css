@@ -1,0 +1,56 @@
+.wrapper {
+    max-width: 400px; /* Adjust maximum width of the box */
+    margin: 0 auto; /* Center the box horizontally */
+    padding: 20px; /* Add padding for spacing inside the box */
+    border: 2px solid #ccc; /* Add border to create a rectangular box */
+    background-color: #fff; /* Set background color of the box */
+    min-height: calc(70vh - 80px); /* Set minimum height of the box to cover the viewport excluding the footer height */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/pexels-photo-8581034.webp'); /* Set background image for the entire page */
+    background-size: cover; /* Cover the entire viewport with the background image */
+}
+
+/* Center the wrapper vertically */
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Make the wrapper responsive */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        max-width: 90%; /* Adjust maximum width for smaller devices */
+    }
+}
+#addTaskBtn {
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.list-group-item {
+    position: relative; /* Make the list item a positioning context */
+}
+
+.btn-delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#taskInput{
+    border: 1px solid black;
+}
+.task-item {
+    border: 1px solid black; /* Add border to create separate boxes */
+  
+}
